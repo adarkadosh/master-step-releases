@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<meta name="description" content="איך להתקין ולפתוח את MasterStep בפעם הראשונה ב־Windows וב־Mac.">
+<title>התקנת MasterStep</title>
+<style>
+:root{--bg:#f4f7fa;--card:#ffffff;--text:#1f2937;--muted:#4b5563;--line:#e5e7eb;--brand:#10b981;--brand-ink:#047857;--brand-soft:#f0fdf4;--brand-soft-ink:#166534;--head-ink:#ffffff;--badge:#d1fae5;--code:#f1f5f9}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1220;--card:#111827;--text:#e5e7eb;--muted:#b6bfcc;--line:#263142;--brand:#059669;--brand-ink:#34d399;--brand-soft:#0f2a20;--brand-soft-ink:#bbf7d0;--head-ink:#ffffff;--badge:#d1fae5;--code:#1f2937}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--brand-ink)}
+header{background:var(--brand);color:var(--head-ink);padding:28px 16px 32px;text-align:center}
+.top{max-width:760px;margin:0 auto 14px;display:flex;justify-content:flex-end}
+.lang{color:var(--head-ink);font-weight:700;font-size:16px;text-decoration:none;border:1.5px solid rgba(255,255,255,.7);border-radius:999px;padding:6px 14px;min-height:44px;display:inline-flex;align-items:center}
+.brand{font-size:32px;font-weight:800;letter-spacing:-.5px;color:var(--head-ink);text-decoration:none;display:inline-block}
+.badge{margin-top:6px;font-size:13px;font-weight:700;color:var(--badge);letter-spacing:2px;text-transform:uppercase}
+main{max-width:760px;margin:0 auto;padding:24px 16px 8px}
+h1{font-size:28px;line-height:1.25;margin:0 0 10px}
+h2{font-size:24px;margin:36px 0 14px;padding-top:8px}
+h3{font-size:18px;margin:22px 0 8px}
+p{margin:0 0 14px}
+.lead{color:var(--muted);font-size:18px}
+.note{background:var(--brand-soft);color:var(--brand-soft-ink);border-radius:12px;padding:14px 16px;margin:18px 0}
+.note p:last-child{margin:0}
+.jump{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 6px}
+.jump a{flex:1 1 140px;text-align:center;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:12px;font-weight:700;text-decoration:none;min-height:44px}
+ol.steps{list-style:none;padding:0;margin:0;counter-reset:s}
+ol.steps>li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 16px 16px 60px;margin:0 0 12px;position:relative}
+[dir=rtl] ol.steps>li{padding:16px 60px 16px 16px}
+ol.steps>li::before{content:counter(s);position:absolute;top:14px;left:16px;width:32px;height:32px;border-radius:50%;background:var(--brand);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:16px}
+[dir=rtl] ol.steps>li::before{left:auto;right:16px}
+ol.steps p:last-child{margin-bottom:0}
+figure{margin:12px 0 0}
+figure img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
+code,.file{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:15px;background:var(--code);border-radius:6px;padding:1px 6px;word-break:break-all}
+ul{padding-inline-start:22px;margin:0 0 14px}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);font-size:16px;display:flex;gap:18px;flex-wrap:wrap;border-top:1px solid var(--line)}
+[dir=rtl] .badge{letter-spacing:0;font-size:14px}
+footer a{min-height:44px;display:inline-flex;align-items:center}
+.notice p{margin:0 0 16px}
+</style>
+</head>
+<body>
+<header>
+  <div class="top"><a class="lang" href="../en/" hreflang="en" lang="en">English</a></div>
+  <a class="brand" href="./" dir="ltr">MasterStep</a>
+  <div class="badge">בטא סגורה</div>
+</header>
+<main>
+<h1>התקנת MasterStep</h1>
+<p class="lead">מדריך קצר להתקנה ולפתיחה הראשונה.</p>
+<div class="note">
+<p>גרסת הבטא עדיין לא חתומה, ולכן בפתיחה הראשונה Windows או macOS יציגו אזהרה. זה צפוי, ועושים את זה רק פעם אחת.</p>
+<p>את קישור ההורדה ואת מפתח הרישיון קיבלתם במייל ההזמנה.</p>
+</div>
+<nav class="jump"><a href="#windows" dir="ltr">Windows</a><a href="#mac" dir="ltr">Mac</a></nav>
+
+<h2 id="windows" dir="rtl">Windows</h2>
+<ol class="steps">
+<li><p>כשההורדה מסתיימת, פתחו את הקובץ. ב־Edge לוחצים על <b><bdi>Open file</bdi></b>.</p>
+<figure><img src="../img/win-download-open.webp" alt="רשימת ההורדות של Edge, עם הקישור Open file מסומן" loading="lazy"></figure></li>
+<li><p>אם מופיע חלון כחול <b><bdi>Windows protected your PC</bdi></b>, לחצו על <b><bdi>More info</bdi></b>.</p></li>
+<li><p>מופיע הכפתור <b><bdi>Run anyway</bdi></b>. לחצו עליו.</p></li>
+<li><p>ההתקנה רצה לבד, בלי שאלות, ולוקחת פחות מדקה. בסופה MasterStep נפתח.</p>
+<figure><img src="../img/win-installing.webp" alt="חלון ההתקנה של MasterStep בזמן ההתקנה" loading="lazy"></figure></li>
+</ol>
+<p>אין כפתור <b><bdi>Run anyway</bdi></b>? השיבו למייל ההזמנה ונעזור.</p>
+
+<h2 id="mac" dir="rtl">Mac</h2>
+<ol class="steps">
+<li><p>פתחו את קובץ ה־DMG וגררו את MasterStep לתיקייה <b><bdi>Applications</bdi></b>.</p></li>
+<li><p>פתחו את MasterStep מהתיקייה <b><bdi>Applications</bdi></b>. macOS יציג הודעה שהוא לא יכול לאמת את האפליקציה. סגרו את ההודעה, ולא לוחצים על <b><bdi>Move to Trash</bdi></b>.</p></li>
+<li><p>פתחו את <b><bdi>System Settings</bdi></b> ← <b><bdi>Privacy &amp; Security</bdi></b>. גללו למטה, ובקטע <b><bdi>Security</bdi></b> לחצו על <b><bdi>Open Anyway</bdi></b>.</p></li>
+<li><p>בחלון שנפתח לחצו שוב על <b><bdi>Open Anyway</bdi></b> והקלידו את הסיסמה של המחשב. מעכשיו MasterStep נפתח כרגיל.</p></li>
+</ol>
+<p>הכפתור <b><bdi>Open Anyway</bdi></b> מופיע רק בערך שעה אחרי שניסיתם לפתוח את האפליקציה. לא רואים אותו? פתחו את MasterStep שוב וחזרו להגדרות.</p>
+<h3>macOS 14 או ישן יותר</h3>
+<p>בתיקייה <b><bdi>Applications</bdi></b>, לחצו על MasterStep עם הכפתור הימני (או Control ולחיצה), בחרו <b><bdi>Open</bdi></b>, ואז לחצו שוב על <b><bdi>Open</bdi></b>.</p>
+<p>ההודעה אומרת שהאפליקציה פגומה (<b><bdi>damaged</bdi></b>)? השיבו למייל ההזמנה ונעזור.</p>
+
+<h2 id="first-launch">בפתיחה הראשונה</h2>
+<ul>
+<li>MasterStep מבקש את מפתח הרישיון. העתיקו אותו מהמייל, הדביקו ולחצו על <b>הפעלה</b>. צריך חיבור לאינטרנט.</li>
+<li>רוצים לספר לנו משהו? באפליקציה: <b>הגדרות ← אודות ← שליחת משוב</b>.</li>
+</ul>
+
+</main>
+<footer><a href="privacy/">פרטיות</a></footer>
+</body>
+</html>

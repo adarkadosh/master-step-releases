@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<meta name="description" content="How to install and first open MasterStep on Windows and Mac.">
+<title>Installing MasterStep</title>
+<style>
+:root{--bg:#f4f7fa;--card:#ffffff;--text:#1f2937;--muted:#4b5563;--line:#e5e7eb;--brand:#10b981;--brand-ink:#047857;--brand-soft:#f0fdf4;--brand-soft-ink:#166534;--head-ink:#ffffff;--badge:#d1fae5;--code:#f1f5f9}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1220;--card:#111827;--text:#e5e7eb;--muted:#b6bfcc;--line:#263142;--brand:#059669;--brand-ink:#34d399;--brand-soft:#0f2a20;--brand-soft-ink:#bbf7d0;--head-ink:#ffffff;--badge:#d1fae5;--code:#1f2937}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--brand-ink)}
+header{background:var(--brand);color:var(--head-ink);padding:28px 16px 32px;text-align:center}
+.top{max-width:760px;margin:0 auto 14px;display:flex;justify-content:flex-end}
+.lang{color:var(--head-ink);font-weight:700;font-size:16px;text-decoration:none;border:1.5px solid rgba(255,255,255,.7);border-radius:999px;padding:6px 14px;min-height:44px;display:inline-flex;align-items:center}
+.brand{font-size:32px;font-weight:800;letter-spacing:-.5px;color:var(--head-ink);text-decoration:none;display:inline-block}
+.badge{margin-top:6px;font-size:13px;font-weight:700;color:var(--badge);letter-spacing:2px;text-transform:uppercase}
+main{max-width:760px;margin:0 auto;padding:24px 16px 8px}
+h1{font-size:28px;line-height:1.25;margin:0 0 10px}
+h2{font-size:24px;margin:36px 0 14px;padding-top:8px}
+h3{font-size:18px;margin:22px 0 8px}
+p{margin:0 0 14px}
+.lead{color:var(--muted);font-size:18px}
+.note{background:var(--brand-soft);color:var(--brand-soft-ink);border-radius:12px;padding:14px 16px;margin:18px 0}
+.note p:last-child{margin:0}
+.jump{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 6px}
+.jump a{flex:1 1 140px;text-align:center;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:12px;font-weight:700;text-decoration:none;min-height:44px}
+ol.steps{list-style:none;padding:0;margin:0;counter-reset:s}
+ol.steps>li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 16px 16px 60px;margin:0 0 12px;position:relative}
+[dir=rtl] ol.steps>li{padding:16px 60px 16px 16px}
+ol.steps>li::before{content:counter(s);position:absolute;top:14px;left:16px;width:32px;height:32px;border-radius:50%;background:var(--brand);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:16px}
+[dir=rtl] ol.steps>li::before{left:auto;right:16px}
+ol.steps p:last-child{margin-bottom:0}
+figure{margin:12px 0 0}
+figure img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
+code,.file{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:15px;background:var(--code);border-radius:6px;padding:1px 6px;word-break:break-all}
+ul{padding-inline-start:22px;margin:0 0 14px}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);font-size:16px;display:flex;gap:18px;flex-wrap:wrap;border-top:1px solid var(--line)}
+[dir=rtl] .badge{letter-spacing:0;font-size:14px}
+footer a{min-height:44px;display:inline-flex;align-items:center}
+.notice p{margin:0 0 16px}
+</style>
+</head>
+<body>
+<header>
+  <div class="top"><a class="lang" href="../he/" hreflang="he" lang="he">עברית</a></div>
+  <a class="brand" href="./" dir="ltr">MasterStep</a>
+  <div class="badge">Closed beta</div>
+</header>
+<main>
+<h1>Installing MasterStep</h1>
+<p class="lead">A short guide to installing and opening the app the first time.</p>
+<div class="note">
+<p>The beta isn't signed yet, so Windows or macOS shows a warning the first time you open it. That's expected, and you only do this once.</p>
+<p>Your download link and license key are in your invite email.</p>
+</div>
+<nav class="jump"><a href="#windows">Windows</a><a href="#mac">Mac</a></nav>
+
+<h2 id="windows">Windows</h2>
+<ol class="steps">
+<li><p>When the download finishes, open the file. In Edge, click <b><bdi>Open file</bdi></b>.</p>
+<figure><img src="../img/win-download-open.webp" alt="The Edge downloads list, with Open file marked" loading="lazy"></figure></li>
+<li><p>If a blue <b><bdi>Windows protected your PC</bdi></b> window appears, click <b><bdi>More info</bdi></b>.</p></li>
+<li><p>A <b><bdi>Run anyway</bdi></b> button appears. Click it.</p></li>
+<li><p>The installer runs on its own, with no questions, and takes under a minute. When it's done, MasterStep opens.</p>
+<figure><img src="../img/win-installing.webp" alt="The MasterStep installer while it installs" loading="lazy"></figure></li>
+</ol>
+<p>No <b><bdi>Run anyway</bdi></b> button? Reply to your invite email and we'll help.</p>
+
+<h2 id="mac">Mac</h2>
+<ol class="steps">
+<li><p>Open the DMG file and drag MasterStep into the <b><bdi>Applications</bdi></b> folder.</p></li>
+<li><p>Open MasterStep from <b><bdi>Applications</bdi></b>. macOS says it can't verify the app. Close the message, and don't click <b><bdi>Move to Trash</bdi></b>.</p></li>
+<li><p>Open <b><bdi>System Settings</bdi></b> → <b><bdi>Privacy &amp; Security</bdi></b>. Scroll down, and under <b><bdi>Security</bdi></b> click <b><bdi>Open Anyway</bdi></b>.</p></li>
+<li><p>In the window that opens, click <b><bdi>Open Anyway</bdi></b> again and type your Mac password. From now on MasterStep opens like any other app.</p></li>
+</ol>
+<p>The <b><bdi>Open Anyway</bdi></b> button only shows for about an hour after you try to open the app. Don't see it? Open MasterStep again, then go back to Settings.</p>
+<h3>macOS 14 or older</h3>
+<p>In <b><bdi>Applications</bdi></b>, right-click MasterStep (or Control-click it), choose <b><bdi>Open</bdi></b>, then click <b><bdi>Open</bdi></b> again.</p>
+<p>Does the message say the app is <b><bdi>damaged</bdi></b>? Reply to your invite email and we'll help.</p>
+
+<h2 id="first-launch">The first time you open it</h2>
+<ul>
+<li>MasterStep asks for your license key. Copy it from the email, paste it, and click <b>Activate</b>. You need an internet connection.</li>
+<li>Want to tell us something? In the app: <b>Settings → About → Send feedback</b>.</li>
+</ul>
+
+</main>
+<footer><a href="privacy/">Privacy</a></footer>
+</body>
+</html>

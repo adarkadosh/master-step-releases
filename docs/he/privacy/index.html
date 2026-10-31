@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<meta name="description" content="פרטיות">
+<title>פרטיות</title>
+<style>
+:root{--bg:#f4f7fa;--card:#ffffff;--text:#1f2937;--muted:#4b5563;--line:#e5e7eb;--brand:#10b981;--brand-ink:#047857;--brand-soft:#f0fdf4;--brand-soft-ink:#166534;--head-ink:#ffffff;--badge:#d1fae5;--code:#f1f5f9}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1220;--card:#111827;--text:#e5e7eb;--muted:#b6bfcc;--line:#263142;--brand:#059669;--brand-ink:#34d399;--brand-soft:#0f2a20;--brand-soft-ink:#bbf7d0;--head-ink:#ffffff;--badge:#d1fae5;--code:#1f2937}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--brand-ink)}
+header{background:var(--brand);color:var(--head-ink);padding:28px 16px 32px;text-align:center}
+.top{max-width:760px;margin:0 auto 14px;display:flex;justify-content:flex-end}
+.lang{color:var(--head-ink);font-weight:700;font-size:16px;text-decoration:none;border:1.5px solid rgba(255,255,255,.7);border-radius:999px;padding:6px 14px;min-height:44px;display:inline-flex;align-items:center}
+.brand{font-size:32px;font-weight:800;letter-spacing:-.5px;color:var(--head-ink);text-decoration:none;display:inline-block}
+.badge{margin-top:6px;font-size:13px;font-weight:700;color:var(--badge);letter-spacing:2px;text-transform:uppercase}
+main{max-width:760px;margin:0 auto;padding:24px 16px 8px}
+h1{font-size:28px;line-height:1.25;margin:0 0 10px}
+h2{font-size:24px;margin:36px 0 14px;padding-top:8px}
+h3{font-size:18px;margin:22px 0 8px}
+p{margin:0 0 14px}
+.lead{color:var(--muted);font-size:18px}
+.note{background:var(--brand-soft);color:var(--brand-soft-ink);border-radius:12px;padding:14px 16px;margin:18px 0}
+.note p:last-child{margin:0}
+.jump{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 6px}
+.jump a{flex:1 1 140px;text-align:center;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:12px;font-weight:700;text-decoration:none;min-height:44px}
+ol.steps{list-style:none;padding:0;margin:0;counter-reset:s}
+ol.steps>li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 16px 16px 60px;margin:0 0 12px;position:relative}
+[dir=rtl] ol.steps>li{padding:16px 60px 16px 16px}
+ol.steps>li::before{content:counter(s);position:absolute;top:14px;left:16px;width:32px;height:32px;border-radius:50%;background:var(--brand);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:16px}
+[dir=rtl] ol.steps>li::before{left:auto;right:16px}
+ol.steps p:last-child{margin-bottom:0}
+figure{margin:12px 0 0}
+figure img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
+code,.file{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:15px;background:var(--code);border-radius:6px;padding:1px 6px;word-break:break-all}
+ul{padding-inline-start:22px;margin:0 0 14px}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);font-size:16px;display:flex;gap:18px;flex-wrap:wrap;border-top:1px solid var(--line)}
+[dir=rtl] .badge{letter-spacing:0;font-size:14px}
+footer a{min-height:44px;display:inline-flex;align-items:center}
+.notice p{margin:0 0 16px}
+</style>
+</head>
+<body>
+<header>
+  <div class="top"><a class="lang" href="../../en/privacy/" hreflang="en" lang="en">English</a></div>
+  <a class="brand" href="../" dir="ltr">MasterStep</a>
+  <div class="badge">בטא סגורה</div>
+</header>
+<main>
+<h1>פרטיות</h1>
+<div class="notice" id="notice">
+<p>היי! כדי להנפיק לך רישיון ל־MasterStep אני צריך שם מלא וכתובת מייל. אשתמש בהם רק כדי להנפיק את הרישיון (ובמידת הצורך לתקשר אם קורה משהו).</p>
+<p>השם והמייל נשמרים אצל Keygen, שירות הרישוי שלנו. אחרי ההתקנה האפליקציה שולחת גם ל־PostHog נתוני שימוש אנונימיים (רק כששיתוף נתוני השימוש דלוק, ובלי לשמור את כתובת ה־IP), ול־GitHub, דרך השרת שלנו, רק דיווחי משוב שבוחרים לשלוח (הדיווח כולל את השם שעל הרישיון). שלושת השירותים נמצאים בארה"ב.</p>
+<p>האחראי על הפרטים האלה הוא אני, אדר. אפשר לבקש ממני בכל רגע לראות, לתקן או למחוק אותם (מחיקה מבטלת את הרישיון): <a href="mailto:adarbkadosh@gmail.com" dir="ltr">adarbkadosh@gmail.com</a></p>
+<p>כל מה שהאפליקציה שולחת מפורט ב"הסכם בטא", בהגדרות ← אודות.</p>
+</div>
+</main>
+<footer></footer>
+</body>
+</html>
