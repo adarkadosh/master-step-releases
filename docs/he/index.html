@@ -43,6 +43,7 @@ footer{max-width:760px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);f
 [dir=rtl] .badge{letter-spacing:0;font-size:14px}
 footer a{min-height:44px;display:inline-flex;align-items:center}
 .notice p{margin:0 0 16px}
+bdi.ui{white-space:nowrap}
 </style>
 </head>
 <body>
@@ -55,33 +56,33 @@ footer a{min-height:44px;display:inline-flex;align-items:center}
 <h1>התקנת MasterStep</h1>
 <p class="lead">מדריך קצר להתקנה ולפתיחה הראשונה.</p>
 <div class="note">
-<p>גרסת הבטא עדיין לא חתומה, ולכן בפתיחה הראשונה Windows או macOS יציגו אזהרה. זה צפוי, ועושים את זה רק פעם אחת.</p>
+<p>גרסת הבטא עדיין לא חתומה, ולכן בפתיחה הראשונה <bdi class="ui">Windows</bdi> או <bdi class="ui">macOS</bdi> יציגו אזהרה. זה צפוי, ועושים את זה רק פעם אחת.</p>
 <p>את קישור ההורדה ואת מפתח הרישיון קיבלתם במייל ההזמנה.</p>
 </div>
 <nav class="jump"><a href="#windows" dir="ltr">Windows</a><a href="#mac" dir="ltr">Mac</a></nav>
 
 <h2 id="windows" dir="rtl">Windows</h2>
 <ol class="steps">
-<li><p>כשההורדה מסתיימת, פתחו את הקובץ. ב־Edge לוחצים על <b><bdi>Open file</bdi></b>.</p>
+<li><p>כשההורדה מסתיימת, פתחו את הקובץ. ב־<bdi class="ui">Edge</bdi> לוחצים על <b><bdi class="ui">Open file</bdi></b>.</p>
 <figure><img src="../img/win-download-open.webp" alt="רשימת ההורדות של Edge, עם הקישור Open file מסומן" loading="lazy"></figure></li>
-<li><p>אם מופיע חלון כחול <b><bdi>Windows protected your PC</bdi></b>, לחצו על <b><bdi>More info</bdi></b>.</p></li>
-<li><p>מופיע הכפתור <b><bdi>Run anyway</bdi></b>. לחצו עליו.</p></li>
+<li><p>אם מופיע חלון כחול <b><bdi class="ui">Windows protected your PC</bdi></b>, לחצו על <b><bdi class="ui">More info</bdi></b>.</p></li>
+<li><p>מופיע הכפתור <b><bdi class="ui">Run anyway</bdi></b>. לחצו עליו.</p></li>
 <li><p>ההתקנה רצה לבד, בלי שאלות, ולוקחת פחות מדקה. בסופה MasterStep נפתח.</p>
 <figure><img src="../img/win-installing.webp" alt="חלון ההתקנה של MasterStep בזמן ההתקנה" loading="lazy"></figure></li>
 </ol>
-<p>אין כפתור <b><bdi>Run anyway</bdi></b>? השיבו למייל ההזמנה ונעזור.</p>
+<p>אין כפתור <b><bdi class="ui">Run anyway</bdi></b>? השיבו למייל ההזמנה ונעזור.</p>
 
 <h2 id="mac" dir="rtl">Mac</h2>
 <ol class="steps">
-<li><p>פתחו את קובץ ה־DMG וגררו את MasterStep לתיקייה <b><bdi>Applications</bdi></b>.</p></li>
-<li><p>פתחו את MasterStep מהתיקייה <b><bdi>Applications</bdi></b>. macOS יציג הודעה שהוא לא יכול לאמת את האפליקציה. סגרו את ההודעה, ולא לוחצים על <b><bdi>Move to Trash</bdi></b>.</p></li>
-<li><p>פתחו את <b><bdi>System Settings</bdi></b> ← <b><bdi>Privacy &amp; Security</bdi></b>. גללו למטה, ובקטע <b><bdi>Security</bdi></b> לחצו על <b><bdi>Open Anyway</bdi></b>.</p></li>
-<li><p>בחלון שנפתח לחצו שוב על <b><bdi>Open Anyway</bdi></b> והקלידו את הסיסמה של המחשב. מעכשיו MasterStep נפתח כרגיל.</p></li>
+<li><p>פתחו את קובץ ה־<bdi class="ui">DMG</bdi> וגררו את MasterStep לתיקייה <b><bdi class="ui">Applications</bdi></b>.</p></li>
+<li><p>פתחו את MasterStep מהתיקייה <b><bdi class="ui">Applications</bdi></b>. <bdi class="ui">macOS</bdi> יציג הודעה שהוא לא יכול לאמת את האפליקציה. סגרו את ההודעה, ולא לוחצים על <b><bdi class="ui">Move to Trash</bdi></b>.</p></li>
+<li><p>פתחו את <b><bdi class="ui">System Settings</bdi></b> ← <b><bdi class="ui">Privacy &amp; Security</bdi></b>. גללו למטה, ובקטע <b><bdi class="ui">Security</bdi></b> לחצו על <b><bdi class="ui">Open Anyway</bdi></b>.</p></li>
+<li><p>בחלון שנפתח לחצו שוב על <b><bdi class="ui">Open Anyway</bdi></b> והקלידו את הסיסמה של המחשב. מעכשיו MasterStep נפתח כרגיל.</p></li>
 </ol>
-<p>הכפתור <b><bdi>Open Anyway</bdi></b> מופיע רק בערך שעה אחרי שניסיתם לפתוח את האפליקציה. לא רואים אותו? פתחו את MasterStep שוב וחזרו להגדרות.</p>
-<h3>macOS 14 או ישן יותר</h3>
-<p>בתיקייה <b><bdi>Applications</bdi></b>, לחצו על MasterStep עם הכפתור הימני (או Control ולחיצה), בחרו <b><bdi>Open</bdi></b>, ואז לחצו שוב על <b><bdi>Open</bdi></b>.</p>
-<p>ההודעה אומרת שהאפליקציה פגומה (<b><bdi>damaged</bdi></b>)? השיבו למייל ההזמנה ונעזור.</p>
+<p>הכפתור <b><bdi class="ui">Open Anyway</bdi></b> מופיע רק בערך שעה אחרי שניסיתם לפתוח את האפליקציה. לא רואים אותו? פתחו את MasterStep שוב וחזרו להגדרות.</p>
+<h3><bdi class="ui">macOS 14</bdi> או ישן יותר</h3>
+<p>בתיקייה <b><bdi class="ui">Applications</bdi></b>, לחצו על MasterStep עם הכפתור הימני (או <bdi class="ui">Control</bdi> ולחיצה), בחרו <b><bdi class="ui">Open</bdi></b>, ואז לחצו שוב על <b><bdi class="ui">Open</bdi></b>.</p>
+<p>ההודעה אומרת שהאפליקציה פגומה (<b><bdi class="ui">damaged</bdi></b>)? השיבו למייל ההזמנה ונעזור.</p>
 
 <h2 id="first-launch">בפתיחה הראשונה</h2>
 <ul>
