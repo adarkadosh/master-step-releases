@@ -8,7 +8,7 @@ git diff -- docs        # review; an unchanged build prints nothing
 ```
 
 - `privacy-notice.adf.json`: the privacy notice Adar approved (Jira MAS-707, comment 14402), placed on the privacy pages verbatim. Never retype it.
-- `check_notice.py <page> <adf.json> <he|en>`: checks that a privacy page still carries the notice byte for byte.
+- `check_notice.py <page> <adf.json> <he|en> <out-dir>`: writes the notice text from the page and from the source to `<out-dir>/<lang>-from-html.txt` and `<lang>-from-adf.txt`; `cmp` the two (they must be identical).
 - Images live in `docs/img/`: real screenshots cropped to the dialog, with the button to press marked.
 - After a push: `npm run check:public-links` in the master-step repo.
 
