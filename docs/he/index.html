@@ -45,6 +45,14 @@ footer{max-width:760px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);f
 [dir=rtl] .badge{letter-spacing:0;font-size:14px}
 footer a{min-height:44px;display:inline-flex;align-items:center}
 .notice p{margin:0 0 16px}
+details.qa{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:18px 0;padding:0 16px}
+details.qa summary{min-height:48px;display:flex;align-items:center;gap:10px;cursor:pointer;font-weight:700;list-style:none;padding:10px 0}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary::before{content:"\25B8";color:var(--brand-ink);font-size:18px;flex:none}
+[dir=rtl] details.qa summary::before{content:"\25C2"}
+details.qa[open] summary::before{content:"\25BE"}
+details.qa h3{margin:14px 0 8px}
+details.qa ol.steps{margin-bottom:16px}
 bdi.ui{white-space:nowrap}
 </style>
 </head>
@@ -64,14 +72,8 @@ bdi.ui{white-space:nowrap}
 <nav class="jump"><a href="#windows" dir="ltr">Windows</a><a href="#mac" dir="ltr">Mac</a></nav>
 
 <h2 id="windows" dir="rtl">Windows</h2>
-<p>משתמשים ב־<bdi class="ui">Chrome</bdi> או ב־<bdi class="ui">Firefox</bdi>? האזהרה על ההורדה נראית שם אחרת. בחרו לשמור את הקובץ, פתחו אותו והמשיכו משלב 4.</p>
 <ol class="steps">
-<li><p>אם <bdi class="ui">Edge</bdi> כותב שהקובץ לא מוכר (<b><bdi class="ui">isn't commonly downloaded</bdi></b>), עמדו עם העכבר על הקובץ, לחצו על שלוש הנקודות ובחרו <b><bdi class="ui">Keep</bdi></b>.</p>
-<figure><img src="../img/win-edge-keep.webp" alt="רשימת ההורדות של Edge, עם שלוש הנקודות והאפשרות Keep מסומנות" loading="lazy"></figure></li>
-<li><p>בחלון שנפתח לחצו על החץ שליד <b><bdi class="ui">Delete</bdi></b> ובחרו <b><bdi class="ui">Keep anyway</bdi></b>.</p>
-<figure><img src="../img/win-edge-keep-anyway.webp" alt="החלון של Edge, עם החץ שליד Delete והאפשרות Keep anyway מסומנים" loading="lazy"></figure></li>
-<li><p>פתחו את הקובץ. ב־<bdi class="ui">Edge</bdi> לוחצים על <b><bdi class="ui">Open file</bdi></b>.</p>
-<figure><img src="../img/win-download-open.webp" alt="רשימת ההורדות של Edge, עם הקישור Open file מסומן" loading="lazy"></figure></li>
+<li><p>פתחו את קובץ ההתקנה שהורדתם.</p></li>
 <li><p>אם מופיע חלון כחול <b><bdi class="ui">Windows protected your PC</bdi></b>, לחצו על <b><bdi class="ui">More info</bdi></b>.</p>
 <figure><img src="../img/win-smartscreen-more-info.webp" alt="החלון הכחול Windows protected your PC, עם הקישור More info מסומן" loading="lazy"></figure></li>
 <li><p>מופיע הכפתור <b><bdi class="ui">Run anyway</bdi></b>. לחצו עליו.</p>
@@ -80,6 +82,20 @@ bdi.ui{white-space:nowrap}
 <figure><img src="../img/win-installing.webp" alt="חלון ההתקנה של MasterStep בזמן ההתקנה" loading="lazy"></figure></li>
 </ol>
 <p>אין כפתור <b><bdi class="ui">Run anyway</bdi></b>? השיבו למייל ההזמנה ונעזור.</p>
+<details class="qa">
+<summary>הדפדפן לא מאפשר לפתוח את הקובץ?</summary>
+<h3><bdi class="ui">Chrome</bdi></h3>
+<p>בבדיקה שלנו <bdi class="ui">Chrome</bdi> הוריד את הקובץ בלי אזהרה. אם בכל זאת מופיעה אזהרה, בחרו לשמור את הקובץ ואז פתחו אותו.</p>
+<h3><bdi class="ui">Edge</bdi></h3>
+<ol class="steps">
+<li><p>אם <bdi class="ui">Edge</bdi> כותב שהקובץ לא מוכר <b><bdi>(isn't commonly downloaded)</bdi></b>, עמדו עם העכבר על הקובץ, לחצו על שלוש הנקודות ובחרו <b><bdi class="ui">Keep</bdi></b>.</p>
+<figure><img src="../img/win-edge-keep.webp" alt="רשימת ההורדות של Edge, עם שלוש הנקודות והאפשרות Keep מסומנות" loading="lazy"></figure></li>
+<li><p>בחלון שנפתח לחצו על החץ שליד <b><bdi class="ui">Delete</bdi></b> ובחרו <b><bdi class="ui">Keep anyway</bdi></b>.</p>
+<figure><img src="../img/win-edge-keep-anyway.webp" alt="החלון של Edge, עם החץ שליד Delete והאפשרות Keep anyway מסומנים" loading="lazy"></figure></li>
+<li><p>פתחו את הקובץ. ב־<bdi class="ui">Edge</bdi> לוחצים על <b><bdi class="ui">Open file</bdi></b>.</p>
+<figure><img src="../img/win-download-open.webp" alt="רשימת ההורדות של Edge, עם הקישור Open file מסומן" loading="lazy"></figure></li>
+</ol>
+</details>
 
 <h2 id="mac" dir="rtl">Mac</h2>
 <ol class="steps">

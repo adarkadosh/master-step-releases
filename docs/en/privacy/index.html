@@ -45,6 +45,14 @@ footer{max-width:760px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);f
 [dir=rtl] .badge{letter-spacing:0;font-size:14px}
 footer a{min-height:44px;display:inline-flex;align-items:center}
 .notice p{margin:0 0 16px}
+details.qa{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:18px 0;padding:0 16px}
+details.qa summary{min-height:48px;display:flex;align-items:center;gap:10px;cursor:pointer;font-weight:700;list-style:none;padding:10px 0}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary::before{content:"\25B8";color:var(--brand-ink);font-size:18px;flex:none}
+[dir=rtl] details.qa summary::before{content:"\25C2"}
+details.qa[open] summary::before{content:"\25BE"}
+details.qa h3{margin:14px 0 8px}
+details.qa ol.steps{margin-bottom:16px}
 bdi.ui{white-space:nowrap}
 </style>
 </head>

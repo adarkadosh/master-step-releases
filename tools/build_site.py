@@ -46,6 +46,14 @@ footer{max-width:760px;margin:0 auto;padding:24px 16px 40px;color:var(--muted);f
 [dir=rtl] .badge{letter-spacing:0;font-size:14px}
 footer a{min-height:44px;display:inline-flex;align-items:center}
 .notice p{margin:0 0 16px}
+details.qa{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:18px 0;padding:0 16px}
+details.qa summary{min-height:48px;display:flex;align-items:center;gap:10px;cursor:pointer;font-weight:700;list-style:none;padding:10px 0}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary::before{content:"\\25B8";color:var(--brand-ink);font-size:18px;flex:none}
+[dir=rtl] details.qa summary::before{content:"\\25C2"}
+details.qa[open] summary::before{content:"\\25BE"}
+details.qa h3{margin:14px 0 8px}
+details.qa ol.steps{margin-bottom:16px}
 bdi.ui{white-space:nowrap}
 """
 
@@ -102,14 +110,8 @@ HE_BODY = f"""<h1>התקנת MasterStep</h1>
 <nav class="jump"><a href="#windows" dir="ltr">Windows</a><a href="#mac" dir="ltr">Mac</a></nav>
 
 <h2 id="windows" dir="rtl">Windows</h2>
-<p>משתמשים ב־{w('Chrome')} או ב־{w('Firefox')}? האזהרה על ההורדה נראית שם אחרת. בחרו לשמור את הקובץ, פתחו אותו והמשיכו משלב 4.</p>
 <ol class="steps">
-<li><p>אם {w('Edge')} כותב שהקובץ לא מוכר ({b("isn't commonly downloaded")}), עמדו עם העכבר על הקובץ, לחצו על שלוש הנקודות ובחרו {b('Keep')}.</p>
-{fig('win-edge-keep.webp', 'רשימת ההורדות של Edge, עם שלוש הנקודות והאפשרות Keep מסומנות')}</li>
-<li><p>בחלון שנפתח לחצו על החץ שליד {b('Delete')} ובחרו {b('Keep anyway')}.</p>
-{fig('win-edge-keep-anyway.webp', 'החלון של Edge, עם החץ שליד Delete והאפשרות Keep anyway מסומנים')}</li>
-<li><p>פתחו את הקובץ. ב־{w('Edge')} לוחצים על {b('Open file')}.</p>
-{fig('win-download-open.webp', 'רשימת ההורדות של Edge, עם הקישור Open file מסומן')}</li>
+<li><p>פתחו את קובץ ההתקנה שהורדתם.</p></li>
 <li><p>אם מופיע חלון כחול {b('Windows protected your PC')}, לחצו על {b('More info')}.</p>
 {fig('win-smartscreen-more-info.webp', 'החלון הכחול Windows protected your PC, עם הקישור More info מסומן')}</li>
 <li><p>מופיע הכפתור {b('Run anyway')}. לחצו עליו.</p>
@@ -118,6 +120,20 @@ HE_BODY = f"""<h1>התקנת MasterStep</h1>
 {fig('win-installing.webp', 'חלון ההתקנה של MasterStep בזמן ההתקנה')}</li>
 </ol>
 <p>אין כפתור {b('Run anyway')}? השיבו למייל ההזמנה ונעזור.</p>
+<details class="qa">
+<summary>הדפדפן לא מאפשר לפתוח את הקובץ?</summary>
+<h3>{w('Chrome')}</h3>
+<p>בבדיקה שלנו {w('Chrome')} הוריד את הקובץ בלי אזהרה. אם בכל זאת מופיעה אזהרה, בחרו לשמור את הקובץ ואז פתחו אותו.</p>
+<h3>{w('Edge')}</h3>
+<ol class="steps">
+<li><p>אם {w('Edge')} כותב שהקובץ לא מוכר <b><bdi>(isn't commonly downloaded)</bdi></b>, עמדו עם העכבר על הקובץ, לחצו על שלוש הנקודות ובחרו {b('Keep')}.</p>
+{fig('win-edge-keep.webp', 'רשימת ההורדות של Edge, עם שלוש הנקודות והאפשרות Keep מסומנות')}</li>
+<li><p>בחלון שנפתח לחצו על החץ שליד {b('Delete')} ובחרו {b('Keep anyway')}.</p>
+{fig('win-edge-keep-anyway.webp', 'החלון של Edge, עם החץ שליד Delete והאפשרות Keep anyway מסומנים')}</li>
+<li><p>פתחו את הקובץ. ב־{w('Edge')} לוחצים על {b('Open file')}.</p>
+{fig('win-download-open.webp', 'רשימת ההורדות של Edge, עם הקישור Open file מסומן')}</li>
+</ol>
+</details>
 
 <h2 id="mac" dir="rtl">Mac</h2>
 <ol class="steps">
@@ -150,14 +166,8 @@ EN_BODY = f"""<h1>Installing MasterStep</h1>
 <nav class="jump"><a href="#windows">Windows</a><a href="#mac">Mac</a></nav>
 
 <h2 id="windows">Windows</h2>
-<p>Using Chrome or Firefox? Its download warning looks different. Choose to keep the file, open it, and continue from step 4.</p>
 <ol class="steps">
-<li><p>If Edge says the file {b("isn't commonly downloaded")}, point at the file, click the three dots and choose {b('Keep')}.</p>
-{fig('win-edge-keep.webp', 'The Edge downloads list, with the three dots and Keep marked')}</li>
-<li><p>In the window that opens, click the arrow next to {b('Delete')} and choose {b('Keep anyway')}.</p>
-{fig('win-edge-keep-anyway.webp', 'The Edge window, with the arrow next to Delete and Keep anyway marked')}</li>
-<li><p>Open the file. In Edge, click {b('Open file')}.</p>
-{fig('win-download-open.webp', 'The Edge downloads list, with Open file marked')}</li>
+<li><p>Open the installer file you downloaded.</p></li>
 <li><p>If a blue {b('Windows protected your PC')} window appears, click {b('More info')}.</p>
 {fig('win-smartscreen-more-info.webp', 'The blue Windows protected your PC window, with More info marked')}</li>
 <li><p>A {b('Run anyway')} button appears. Click it.</p>
@@ -166,6 +176,20 @@ EN_BODY = f"""<h1>Installing MasterStep</h1>
 {fig('win-installing.webp', 'The MasterStep installer while it installs')}</li>
 </ol>
 <p>No {b('Run anyway')} button? Reply to your invite email and we'll help.</p>
+<details class="qa">
+<summary>Your browser won't let you open the file?</summary>
+<h3>Chrome</h3>
+<p>When we tested, Chrome downloaded the file with no warning. If you do see a warning, choose to keep the file, then open it.</p>
+<h3>Edge</h3>
+<ol class="steps">
+<li><p>If Edge says the file <b><bdi>isn't commonly downloaded</bdi></b>, point at the file, click the three dots and choose {b('Keep')}.</p>
+{fig('win-edge-keep.webp', 'The Edge downloads list, with the three dots and Keep marked')}</li>
+<li><p>In the window that opens, click the arrow next to {b('Delete')} and choose {b('Keep anyway')}.</p>
+{fig('win-edge-keep-anyway.webp', 'The Edge window, with the arrow next to Delete and Keep anyway marked')}</li>
+<li><p>Open the file. In Edge, click {b('Open file')}.</p>
+{fig('win-download-open.webp', 'The Edge downloads list, with Open file marked')}</li>
+</ol>
+</details>
 
 <h2 id="mac">Mac</h2>
 <ol class="steps">
